@@ -22,7 +22,7 @@ int main() {
     // = , += ( a = a+1 ) , -= , *= , /=
 
     
-    // increment and decrement operator
+    // increment and decrement operator ---> Unary operator
     int a = 3;      // a++ , ++a , --a, a--
     // post and pre (change by value  1)
 
