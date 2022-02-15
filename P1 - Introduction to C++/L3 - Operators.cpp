@@ -46,6 +46,9 @@ int main() {
     // add 2 zero at binary of a's last
     // 7 ---> (111)     ---> 11100 ---> (28)
 
+    // a << n       left shift          a*2^n
+    // a >> n       rihgt shift         a/2^n
+    
     cout << l << '\t' << r << '\n';
     // 28       1
 
