@@ -14,7 +14,7 @@ int main() {
     cout << arr[4] << endl;
     cout << arr[5] << endl;     // default 0
 
-    int a[3];   // initialize randomaly
+    int a[3];   // initialize randomly
 
     int ary[] = {3,2,3,2};  // size = 4 ; not necessary to give
 
@@ -26,8 +26,8 @@ int main() {
 
 
     // ----------------- Multidimension Array -----------------
-    int mdarr[2][3] = {{1,2} ,{3,4}};
-    // mdarr[2][3] = {1,2,3,4}      ----> also correct
+    int mdarr[2][2] = {{1,2} ,{3,4}};
+    // mdarr[2][2] = {1,2,3,4}      ----> also admissible
     
     cout << mdarr[0][0] << endl;    // 1
 
