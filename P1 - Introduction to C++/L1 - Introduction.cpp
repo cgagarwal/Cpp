@@ -14,16 +14,21 @@ int main() {
         std::cout << "Hello, Chirag"; 
         std::cin        std::endl
     */
-    cout << "Hello, Chirag";
+    cout << "Hello, Chirag\n";
 
     int a;
     cin >> a;       // for user input
     
     // get and put
     char ch;
-    cin.get(ch);        // input char -> 'a'
-    cout.put(ch);       // output -> a
+    cin.get(ch);        // input char -> '\n'
+    cout.put(ch);       // output -> newline
     // cin.get()  is also admissible
-
+    
+    // cin.getline(name , length, character reads till = '\n' -- default);
+    char str[10];
+    cin.getline(str, 10);      // read only 9 characters, 10th is automatially null
+    cout.write(str, 10);        // print the 10 characters of str
+    
     return 0; // not necessary
 }
