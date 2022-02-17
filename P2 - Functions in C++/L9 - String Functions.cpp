@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <algorithm>    // for sort() function
 using namespace std;
 
 int main() {
@@ -65,12 +64,6 @@ int main() {
 
     // convert int to string
     cout << to_string(s) + "ijk" << endl;     // 1708ijk
-
-    
-    // sort the string
-    string str = "vaikunthapurramuloo";
-    sort(str.begin(), str.end());       // sort(itr to start, itr to end)
-    cout << str << endl;        // aaahiklmnooprrtuuuv
     
     return 0;
 }
