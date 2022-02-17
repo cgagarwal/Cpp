@@ -17,7 +17,7 @@ int main() {
        positive values are directly stored in their binary form
        negative values are stored as 2's complement of the value
        
-       1's Complement ----> convert 1 to 0 and 0 to 1 in biary
+       1's Complement ----> convert 1 to 0 and 0 to 1 in binary
        2's Complement ----> add 1 in 1's complement
     */
 
