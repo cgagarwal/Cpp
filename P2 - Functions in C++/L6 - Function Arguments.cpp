@@ -38,7 +38,7 @@ int main() {
     cout << sum(10,20,30) << endl;
     cout << sum(10,20) << endl;
     cout << sum(10) << endl;
-    // argument value not passed so take its default value 0
+    // argument value not passed so take its default value as specified
 
     return 0;
 }
