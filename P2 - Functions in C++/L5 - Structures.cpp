@@ -4,15 +4,12 @@ using namespace std;
 typedef struct movieInfo {
     int year;
     float imdb;
-}film;
-// also called film now
+}film;          // struct movieInfo also called film now
 
 union info {
     int budget;
     char car;
-    float dollar;
-};
-// one at a time used (all have one shared memory)
+};      // one at a time used (all have one shared memory)
 
 int main() {
     struct movieInfo pushpa;
