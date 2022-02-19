@@ -22,6 +22,12 @@ int main() {
     s = "Duvvada Jagannadham";
     transform(s.begin() , s.end() , s.begin() , ::toupper);
     cout << s << endl;      // DUVVADA JAGANNADHAM
+    
+    
+    // reverse the string
+    s = "Republic";
+    reverse(s.begin(), s.end());
+    cout << s << endl;          //  cilbupeR
 
     return 0;
 }
