@@ -24,7 +24,7 @@ int main() {
     delete[] arr;           // deallocate the array i.e. block of memory
 
     // nullptr or NULL ----> both are null pointers
-    pt = nullptr;
+    pt = nullptr;               //  ptr = NULL
     cout << pt << endl;         // 0x0
     
     return 0;
