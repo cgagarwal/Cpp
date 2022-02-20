@@ -10,6 +10,8 @@ using namespace std;
 int main() {
     
     // cin for input    cout for output
+    // cin ignore whitespaces, tabspaces , newline
+    // all inputs are stored in an input buffer, and read accordingly
     int a,b;
     cin >> a >> b;              // '>>' ---> Extraction Operator
 
