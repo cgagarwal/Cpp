@@ -14,7 +14,7 @@ int main() {
     //    Relational opertors
     // == , != , > , >= , < , <=
 
-    //    Logical Operators
+    //    Logical Operators         ----- precedence (not > and > or)
     // && (and) , || (or) , ! (not)
     // result is bool
 
