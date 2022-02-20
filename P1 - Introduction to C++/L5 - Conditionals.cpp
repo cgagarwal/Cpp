@@ -30,6 +30,16 @@ int main() {
             break;
     }
     // once a match occurs all following case executes until a break is reached
+    
+    
+    // Ternary Operators
+    int a,b,c;
+    a = 2 , b = 4;
+    // short hand if else
+    c = (a > b) ? a : b;      // if a>b then c = a else c = b
+    cout << c << endl;  // 4
+    // check the condition (-------)
+    // if condition true then (? ---)  else (: ---)
 
     return 0;
 }
