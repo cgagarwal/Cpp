@@ -5,7 +5,8 @@ It tells the preprocessor to include the contents of iostream header file in the
 This file is required for input-output statements.
 */
 
-using namespace std;    // omitting std is admissible
+using namespace std;    // omitting std is admissible by scope resolution operator (::)
+// std is C++ standard namespace
 
 // main() ----> program execution begins
 int main() {
