@@ -29,6 +29,7 @@ int main() {
             cout << "NOT FOUND\n";
             break;
     }
+    // once a match occurs all following case executes until a break is reached
 
     return 0;
 }
