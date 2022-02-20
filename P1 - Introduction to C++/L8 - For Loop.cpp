@@ -19,7 +19,10 @@ int main() {
         i++;
     }
 
-    // removing the condition or condition always true ---> result in infinte loop
+    /* removing the condition or condition always true ---> result in infinte loop
+            for(;;)
+                cout << "Infinte Loop";
+    */
 
     for(int i = 0 , j = 3 ; i < 3 && j > 0 ; i++, j--) {
         cout << i+j << endl;
