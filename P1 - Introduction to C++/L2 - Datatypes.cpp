@@ -21,9 +21,12 @@ int main() {
        2's Complement ----> add 1 in 1's complement
     */
     
-   bool a = true, b = false;
-   // true (1)  ;  false (0)
-   cout << a << '\t' << b << endl;
+   bool a = true, b = false;    // true (1)  ;  false (0)
+   cout << a << '\t' << b << endl;      //  1    0
+   cout << boolalpha;               // bool values are true and false instead of 1 and 0
+   cout << a << '\t' << b << endl;      // true   false
+   cout << noboolalpha;             // bool values are again 1 and 0
+   cout << a << '\t' << b << endl;      //  1    0
    // endl for new line
 
    cout << p << ' ' << z << '\n';
