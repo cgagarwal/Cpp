@@ -29,14 +29,17 @@ int main() {
     }
 
 
-    // Ternary Operators
-    int a,b,c;
-    a = 2 , b = 4;
-    // short hand if else
-    c = (a > b) ? a : b;      // if a>b then c = a else c = b
-    cout << c << endl;  // 4
-    // check the condition (-------)
-    // if condition true then (? ---)  else (: ---)
-
+    // Range based For Loop (compiler warning: C++11 Extension)
+    
+    int scores[] = {12,3,45,56,6,7,7,8};
+    for(int score : scores)            // auto is used instead of int so it automatically set the type of score
+        cout << score << " ";
+    cout << endl;           // 12 3 45 56 6 7 7 8
+    
+    for(auto c : "Chirag Goyal")        // char is also used instead of auto
+        cout << c;
+    cout << endl;           // Chirag Goyal
+    
+    
     return 0;
 }
