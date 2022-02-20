@@ -31,4 +31,5 @@ int main() {
     cout.write(str, 10);        // print the 10 characters of str
     
     return 0; // not necessary
+    // it indicates successful program execution
 }
