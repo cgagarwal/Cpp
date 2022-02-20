@@ -30,6 +30,7 @@ int main() {
 
 
     // Range based For Loop (compiler warning: C++11 Extension)
+    // auto type specifier is also a C++11 Extension
     
     int scores[] = {12,3,45,56,6,7,7,8};
     for(int score : scores)            // auto is used instead of int so it automatically set the type of score
@@ -39,7 +40,6 @@ int main() {
     for(auto c : "Chirag Goyal")        // char is also used instead of auto
         cout << c;
     cout << endl;           // Chirag Goyal
-    
     
     return 0;
 }
