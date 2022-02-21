@@ -1,14 +1,20 @@
 #include <iostream>
 #include <string>           // also in namespace std
+#include <cstring>      // as like as string.h in C ; functions on C-type strings i.e character array
 using namespace std;
 
 int main() {
 
+    string s0;                   //  empty string
     string s1 = "Hello";
     string str(6, 'C');         // str = 6 times C
+    string s_0(s1);          // copy of s1
+    string s_1("Chirag",4);     // Chir
+    string s_2("Chirag Goyal", 3 , 5);      //  (str , starting idx, length)
 
     cout << s1 << endl;      // Hello
-    cout << str << endl;    // CCCCCC 
+    cout << str << endl;    // CCCCCC
+    cout << s_2 << endl;      // rag G
 
     int len = s1.size();    // compute the length of string
     cout << len << endl;      // 5
@@ -23,7 +29,7 @@ int main() {
 
 
     // Accessing or updating the string
-    char c = s[2];
+    char c = s[2];                  // s.at(2) is also valid
     cout << c << endl;      //  l
     cout << s << endl;      // Hello Chirag
     s[5] = '.';
@@ -37,7 +43,7 @@ int main() {
 
     getchar();    // for one extra character in input buffer from upper output
 
-    // for reading the whole line  (until new line encounters)
+    // getline(cin,str,character reads till = '\n' -- default);
     getline(cin,b);         // Chirag Goyal
     cout << b << endl;      // Chirag Goyal
     
