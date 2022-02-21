@@ -31,6 +31,8 @@ int main() {
     cout << k << endl;      // 4.56
     cout << (int)k << endl;         // 4
     cout << int(k) << endl;         // 4
+    cout << static_cast<double>(5)/16 << endl;      // 0.3125
+    // static_cast<datatype>(---)   ---> also valid syntax for typecasting
     
     return 0;
 }
