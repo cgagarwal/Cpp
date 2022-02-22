@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int sum(int , int);     // function prototype  declaration
+int sum(int , int);     // function prototype ----> forward declaration
 
 void greet() {
     cout << "Hello\n";
