@@ -25,8 +25,9 @@ int main() {
     // y is not another var , it is aliases to x
     // if we update x , y also changed
 
-    // l- values ----> variables
-    // r- values ----> which are not the l-values
+    // l-values ----> variables
+    // r-values ----> which are not the l-values
+    // references are only reference to l-value
     
     // Typecasting
     float k = 4.56;
