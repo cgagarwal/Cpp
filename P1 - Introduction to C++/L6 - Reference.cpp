@@ -25,7 +25,9 @@ int main() {
     // y is not another var , it is aliases to x
     // if we update x , y also changed
 
-
+    // l- values ----> variables
+    // r- values ----> which are not the l-values
+    
     // Typecasting
     float k = 4.56;
     cout << k << endl;      // 4.56
