@@ -15,10 +15,9 @@ using namespace std;
 class Info {
 
     private:
-        float imdb;
+        float imdb;             //  by default, members of class are private
         int project_no;
-        // not accessible by user
-        // only access inside this class functions
+        // not accessible by user ; only accessible inside this class
 
     public:
         int year;
