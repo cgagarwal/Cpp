@@ -4,7 +4,7 @@
 ---- it invoked when any object is destroyed and there should be only one destructor in a class.
 */
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 class num{
