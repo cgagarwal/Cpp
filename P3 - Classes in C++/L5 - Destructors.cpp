@@ -33,7 +33,7 @@ int main() {
         num n6(6);
         
     }
-    // destructor called in reverse order (n6 , n4 , n3 , n2)
+    // destructor invoked in reverse order of their declaration (n6 , n4 , n3 , n2)
     
     num n7(7);         // Constructor for n7
 
