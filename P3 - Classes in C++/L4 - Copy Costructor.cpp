@@ -2,37 +2,35 @@
 using namespace std;
 
 class Number{
-    int a;
+    int n;
     public:
-        Number() {
-            a = 0;           // default constructor to create object directly
-        };
-        Number(int n) {
-            a = n;
-        }
+        Number(int a = 0) : n(a) {}
 
-        Number(Number &obj) {
-            a = obj.a;              // Copy constructor
+        Number(Number &obj) {               // Copy constructor
+            n = obj.n;
+            cout << "Copy Constructor Invoked" << endl;
         }
-        // When no copy constructor is found , compiler supplies its own copy constructor.
+        // In absence of copy constructor, C++ compiler creates a default Copy Constructor.
+        // Default Copy Constructor only does Shallow Copy.
+        // Deep copy is possible only with user defined copy constructor.
+        // Shallow Copy and Deep Copy works same if none of the variables are defined in the heap.
+        // If some variables are located in heap, then copied object variable will also reference then same memory location.
+        // But in Deep Copy, they have different memory locations.
 
         void display() {
-            cout << a << endl;
+            cout << n << endl;
         }
 };
 
 int main() {
 
-    Number x,y,z(12);
-    x.display();            // 0
-    y.display();            // 0
+    Number z(12);
     z.display();            // 12
 
     Number z1(z), z2;           // Copy Constructor invoked
     z1.display();           // 12
-    // z1 is a copy of z via copy constructor
 
-    z2 = z;                 // Copy Constructor not invoked
+    z2 = z;                 // Copy Constructor not invoked i.e. Default Assignment operator
     z2.display();         // 12
 
     Number z3 = z;          // Copy Constructor invoked
