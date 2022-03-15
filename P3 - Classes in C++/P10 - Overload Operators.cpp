@@ -35,6 +35,18 @@ class Complex {
 
             return *this;
         }
+
+
+        Complex &operator ++ () {       // pre-increment
+            x++;
+            return *this;
+        }
+
+        Complex operator ++ (int) {     // post-increment
+            Complex cmp = *this;
+            operator++();       // call pre-increment
+            return cmp;
+        }
 };
 
 int main() {
@@ -58,6 +70,13 @@ int main() {
 
     c2.getdata();           // 2 + 2i (Shallow Copy)    ;    2 + 2i (Deep Copy)
     c1.getdata();           // 4 + 2i (Shallow Copy)    ;    4 + 4i (Deep Copy)
+
+    cout << endl;
+
+    (c2++).getdata();       // 2 + 2i 
+    c2.getdata();           // 3 + 2i
+    (++c2).getdata();       // 4 + 2i
+    c2.getdata();           // 4 + 2i
 
     return 0;
 }
