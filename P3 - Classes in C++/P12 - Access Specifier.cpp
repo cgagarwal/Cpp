@@ -43,7 +43,5 @@ int main() {
 
     b2.get();           // 7 + 9i
     
-    // Derived class destructor invoked prior than base class destuctor
-    
     return 0;
 }
