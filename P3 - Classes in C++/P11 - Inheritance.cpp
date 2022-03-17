@@ -8,6 +8,11 @@ Hierarchical Inheritance    --->    several derived class from single base class
 Multilevel Inheritance      --->    deriving a class from already derived class
 Hybrid Inheritance          --->    combination of multiple and multilevel inheritance
 
+A Derived Class does not inherit:-
+                               --- Base Class Constructor
+                               --- Base Class Destructor
+                               --- Base Class overloaded assignment operator
+                               --- Base Class friend functions
 */
 
 #include <bits/stdc++.h>
