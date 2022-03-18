@@ -56,6 +56,7 @@ class Result : public Test, public Sports {
 /* ------------------------- Virtual Base Class ---------------------------
 --- to prevent multiple instances of class.
 --- virual public or public virtual ---> valid syntax
+
 Explain:-
         class Student inherited by class Test and class Sports.
         class Test and class Sports both inherited by class Result.
