@@ -6,7 +6,7 @@ using namespace std;
 // Abstract Base Classes have atleast one Pure Virtual Function.
 // If Dervied Class does not override it then it is also a derived class.
 // Derived class overriding pure virtual function is concrete class.
-// Only use pointers and reference of Abstract Class to dynimacally refer to concrete class
+// Only use pointers and reference of Abstract Class to dynimacally refer to concrete class.
 
 class Movie {           // Abstract
     protected:
