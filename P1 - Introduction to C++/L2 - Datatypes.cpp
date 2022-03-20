@@ -21,17 +21,14 @@ int main() {
        2's Complement ----> add 1 in 1's complement
     */
     
+    
    bool a = true, b = false;    // true (1)  ;  false (0)
    cout << a << '\t' << b << endl;      //  1    0
-   cout << boolalpha;               // bool values are true and false instead of 1 and 0
-   cout << a << '\t' << b << endl;      // true   false
-   cout << noboolalpha;             // bool values are again 1 and 0
-   cout << a << '\t' << b << endl;      //  1    0
-   // endl for new line
 
    cout << p << ' ' << z << '\n';
    // sizeof operator ---> return the size in bytes
    cout << sizeof(p) << endl << sizeof p << endl;       // both are valid for determinig size 
+    
   
    /*   line seperator ---> endl or '\n'      tab space ----> '\t'          backspace ---> '\b'
         \' (single quote)       \" (double quote)         \\ (backslash)
@@ -39,8 +36,8 @@ int main() {
         long (ld)           double (lf)     int (d)       float (f)     char (c)
    */
     
-   const int x = 9;    // always constant
-   // read only variable
+    
+   const int x = 9;    // always constant   --> read only variable
    
    // ------------- Literal constant ------------------
    // 12 (int)     12U (unsigned int)   12L (long int)     12LL (long long int)
