@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iomanip>  // for setw() and setfill() manipulator
+#include <iomanip>      // for setw() and setfill() manipulator
 using namespace std;
 
 /* ------------------- Header Files --------------------
@@ -31,8 +31,18 @@ int main() {
     unsigned int       --- 4 bytes (8 bit) ---- 0 to 2^(32) - 1   (2^32)
     */
     
-    cout << setw(4) << 12 << endl;              // __12
-    cout << setw(4) << setfill('*') << 12 << endl;    // **12
+    // setw     ---> total width ; remaing are blanked
+    // setfill  ---> fill the remainig blank with something
+    // left and right ; sides from where data starts
+    
+    cout << setw(4) << 12 << "bo" << endl;              // __12bo     (only affect next data)
+    cout << setw(4) << left << 12 << "bo" << endl;              // 12__ bo    (left affect all other stream)
+    cout << setw(4) << right << 12 << "bo" << endl;              // __12bo     (right for default)
+    cout << setw(4) << setfill('-') << 12 << "bo" << endl;    // --12bo   (only affect next data)
+    cout << setfill('-') << setw(4) << 12 << "bo" << endl;    // --12bo   (both valid)
+    cout << setfill('-') << setw(4) << left << 12 << "bo" << endl;    // 12--bo
+    
+    // no significance of left and right if setw not associated
 
     return 0;
 }
