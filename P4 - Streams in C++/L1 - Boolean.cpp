@@ -29,6 +29,5 @@ int main() {
 
    // All the settings reamain same unless flags are again changed
 
-   return 0;
-  
+   return 0; 
 }
