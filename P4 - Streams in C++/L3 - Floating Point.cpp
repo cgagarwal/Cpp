@@ -46,6 +46,7 @@ int main() {
 
    cout.unsetf(ios::scientific | ios::fixed);
    cout << setprecision(6);
+   cout << resetiosflags(ios::uppercase);
    cout << resetiosflags(ios::showpos);
    cout << resetiosflags(ios::showpoint);
 
