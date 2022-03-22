@@ -18,6 +18,9 @@ int main() {
     ---- Derived Containers         {stack , queue, priority_queue}
     
     ------------------------------------ Iterators -----------------------------------
+    begin   ---> starting of vector ; first element
+    end     ---> ending of vector   ; location after last element
+    
     --- iterator                                             begin() & end()
     --- const_iterator                                      cbegin() & cend()
     --- reverse_iterator                                    rbegin() & rend()
