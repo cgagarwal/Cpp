@@ -29,10 +29,8 @@ int main() {
             
     pair<int,string> p;            // pair of int and string
     p = make_pair(4,"Hyy");     
-            
     
     cout << p.first << " : " << p.second << endl;                       // first and second value of pair
-    
   
     return 0;
 }
