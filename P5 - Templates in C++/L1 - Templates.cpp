@@ -2,11 +2,11 @@
 using namespace std;
 
 template <class T>              // templates are parameterized classes
-class allArray {
+class Array {
     public:
         T * arr;
         int size;
-        allArray(int m) {
+        Array(int m) {
             size = m;
             arr = new T[size];
         }
@@ -35,12 +35,12 @@ class twoNum {
 
 int main() {
   
-    allArray<int> v1(3);
+    Array<int> v1(3);
     v1.arr[0] = 4;
     v1.arr[1] = 5;
     v1.arr[2] = 2;
 
-    allArray<float> v2(3);
+    Array<float> v2(3);
     v2.arr[0] = 2.4;
     v2.arr[1] = 0.5;
     v2.arr[2] = 1.7;
