@@ -1,5 +1,5 @@
 #include <iostream>
-#include <queue>        // priority queue
+#include <queue>        // for priority queue
 using namespace std;
 
 int main() {
