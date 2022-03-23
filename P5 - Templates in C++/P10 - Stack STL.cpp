@@ -1,6 +1,5 @@
 #include <iostream>
 #include <list>
-#include <deque>
 #include <stack>            // Last in First out
 #include <vector>
 using namespace std;
