@@ -14,7 +14,7 @@ class Number{
         // Default Copy Constructor only does Shallow Copy.
         // Deep copy is possible only with user defined copy constructor.
         // Shallow Copy and Deep Copy works same if none of the variables are defined in the heap.
-        // If some variables are located in heap, then copied object variable will also reference then same memory location.
+        // If some variables are located in heap, then copied object variable will also reference the same memory location.
         // But in Deep Copy, they have different memory locations.
 
         void display() {
