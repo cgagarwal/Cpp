@@ -4,7 +4,7 @@ using namespace std;
 // Virtual Functions is used to invoke the function of the Derived Class with Base class pointer, which points to derived class object.
 // Abstact Base Class can not instantiated (their objects are not allowed).
 // Abstract Base Classes have atleast one Pure Virtual Function.
-// If Dervied Class does not override it then it is also a derived class.
+// If Dervied Class does not override it then it is also a abstract class.
 // Derived class overriding pure virtual function is concrete class.
 // Only use pointers and reference of Abstract Class to dynimacally refer to concrete class.
 
