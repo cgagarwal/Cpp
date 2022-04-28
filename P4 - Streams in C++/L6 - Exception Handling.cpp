@@ -58,5 +58,11 @@ int main() {
         cerr << "------------ERROR------------" << endl;
     }
   
+    // cassert  --- library
+    assert(false);      // abort the program ; results in termination of program
+    // assert(true)         --> nothing happens ; program runs as it is
+    // assert(any_statement)    -- VALID        statement true or false
+    
+    
     return 0;
 }
