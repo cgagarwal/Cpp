@@ -11,6 +11,9 @@ void display(map<string,int> &movie) {
     }
 }
 
+//           map    ->  BST             O(log n)
+// unordered_map    ->  HashTable       O(1)
+
 int main() {
 
     map<string, int> movie;
@@ -45,6 +48,9 @@ int main() {
     cout << movie.empty() << endl;  // 1
 
     // multimap and unordered_multimap            ; allow duplicate element
+    
+    // Check the presence of an element
+    cout << movie.count("Johnny Depp") << endl;         // 0
 
     return 0;
 }
