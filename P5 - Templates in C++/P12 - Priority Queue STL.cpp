@@ -10,7 +10,9 @@ int main() {
     // for inserting object of any class in priority queue it must has overloaded operator '<'
     // No iterators supported
 
-    priority_queue<int> pq;
+    priority_queue<int> pq;         // default:     Max_Priority_Queue   ;  swap (parent < child)
+    
+    priority_queue<int, vector<int>, greater<int> > p;      // Min_Priority_Queue       ; swap (parent > child)
 
     pq.push(10);
     pq.push(20);        // inserted in priority order
